@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Meu Treino A–E</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Treino rotativo A → E</p>
+        <h1>Meu treino</h1>
+        <p class="subtitle">Continue sempre do ponto em que parou. O dia da semana não importa.</p>
+      </div>
+      <div class="status-card">
+        <span>Próximo treino</span>
+        <strong id="nextWorkoutLetter">A</strong>
+        <small id="nextWorkoutName">Peito + Tríceps</small>
+      </div>
+    </header>
+
+    <section class="actions" aria-label="Ações do treino">
+      <button class="primary-btn" id="startWorkoutBtn">Ver treino de hoje</button>
+      <button class="secondary-btn" id="completeWorkoutBtn">Marcar como concluído</button>
+      <button class="ghost-btn" id="resetBtn">Reiniciar sequência</button>
+    </section>
+
+    <section class="progress-section">
+      <div class="section-heading">
+        <h2>Sequência</h2>
+        <p>Você avança apenas quando concluir um treino.</p>
+      </div>
+      <div class="sequence" id="sequence"></div>
+    </section>
+
+    <section class="workout-card" id="workoutCard" aria-live="polite">
+      <div class="workout-header">
+        <div>
+          <p class="workout-letter" id="workoutLetter">A</p>
+          <h2 id="workoutTitle">Peito + Tríceps</h2>
+        </div>
+        <p class="workout-focus" id="workoutFocus"></p>
+      </div>
+
+      <div id="workoutContent"></div>
+    </section>
+
+    <section class="notes-card">
+      <h2>Regras do plano</h2>
+      <ul>
+        <li>A sequência é A → B → C → D → E → A, independentemente do dia da semana.</li>
+        <li>Se você faltar, retome pelo próximo treino da sequência.</li>
+        <li>No treino E, mobilidade e core são prioridade; o cardio é opcional.</li>
+        <li>Priorize execução, amplitude confortável e progressão gradual.</li>
+        <li>Se um exercício reproduzir dor lombar, interrompa esse exercício naquele treino.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Plano pessoal de treino • progresso salvo neste navegador</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
